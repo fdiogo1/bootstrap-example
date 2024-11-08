@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="h-100">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[MDS] Squad10 - 2024.2 </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="js/scripts.js"></script>
+    </head>
+
+    <body class="d-flex align-items=center py-4 h-100"> <!--bg-body-tertiary -->
+        <main class="w-100 m-auto form-container">
+            <form>
+                <img src="img/unb-logo.png" id="logo-image" class="rounded mx-auto d-block mb-4" height="50" width="180"> <!-- mb = margin bottom-->
+                <h1 class="h5 mb-4 fw-bold text-center">Faça login</h1>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control form-background" id="floatingInput" placeholder="email@gmail.com">
+                    <label for="floatingInput">E-mail</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="password" class="form-control form-background" id="floatingInput" placeholder="Password">
+                    <label for="floatingInput">Senha</label>
+                </div>
+
+                <div class="form-check text-start my-3">
+                    <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+                    <label class="form-check-label text-gray-50 fw-bold" for="flexCheckDefault">Manter conectado</label>
+
+                </div>
+                
+                <button type="button" class="btn btn-primary w-100 py-2" id="liveAlertBtn" onclick="signIn()">Entrar</button>
+                <p class="text-center py-4 text-gray-50 fw-bold">&copy; 2024. Todos os direitos reservados.</p>
+                <div id="placeholderText"></div>
+            </form>
+        </main>>
+
+    </body>
+
+</html>

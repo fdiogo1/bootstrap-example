@@ -1,0 +1,43 @@
+.form-container {
+    max-width: 450px;
+    padding: 1rem;
+}
+
+#logo-image {
+    text-align: center;
+    display: block;
+}
+
+.gradient-custom {
+    background: #0b30e7;
+    background: -webkit-linear-gradient(to right, rgb(74, 129, 232), rgba(37, 117, 252, 1));
+    
+    background: linear-gradient(to right, rgb(92, 203, 234), rgba(37, 117, 252, 1))
+}
+
+.form-background {
+    background: rgba(59, 59, 59, 0.538);
+}
+
+body {
+    background-image: url(../img/background-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background-image.jpg'); /* Mesma imagem de fundo */
+    background-size: cover;
+    background-position: center center;
+    filter: blur(8px); /* Aplica o desfoque, ajuste o valor conforme necessário */
+    z-index: -1; /* Coloca a camada atrás do conteúdo */
+}
